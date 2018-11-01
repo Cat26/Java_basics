@@ -5,11 +5,12 @@ public class Product {
     private double price;
 
     public Product(String name, double price) {
+        super();// czemu?
         this.name = name;
         this.price = price;
+
     }
 
-    public  Product(){}
 
     public double getPrice() {
         return price;
@@ -26,4 +27,13 @@ public class Product {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                '}';
+    }
+
 }
