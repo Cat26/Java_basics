@@ -1,5 +1,6 @@
 package Market;
 
-public class Promotions {
-
+public interface Promotions {
+    boolean CanApply(Cart cart);
+    void Calculate(Cart cart);
 }
